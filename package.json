@@ -1,7 +1,7 @@
 {
   "name": "bird_handbook",
   "version": "1.0.0",
-  "description": "打鸟图鉴",
+  "description": "A handbook for birdwatching",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -9,7 +9,7 @@
     "dist": "electron-builder"
   },
   "keywords": [],
-  "author": "稿子件",
+  "author": "t2ek1ng0",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
@@ -36,22 +36,11 @@
     "buildDependenciesFromSource": false,
     "forceCodeSigning": false,
     "extraResources": [
-      {
-        "from": "venv",
-        "to": "venv"
-      },
-      {
-        "from": "model_predict.py",
-        "to": "."
-      },
-      {
-        "from": "./dataset",
-        "to": "dataset"
-      },
-      {
-        "from": "./model_resnet50",
-        "to": "model_resnet50"
-      }
+      { "from": "venv", "to": "venv" },
+      { "from": "model_predict.py", "to": "." },
+      { "from": "model_resnet50", "to": "model_resnet50" },
+      { "from": "class_to_label.json", "to": "." },
+      { "from": "records.json", "to": "." }
     ]
 
   }
