@@ -17,6 +17,7 @@ npm init -y
 #npm config set registry https://registry.npmmirror.com
 npm install electron --save-dev
 npm install axios
+npm install --save-dev electron-builder
 pip install pyinstaller
 ```
 
@@ -42,7 +43,6 @@ dataset:https://hf-mirror.com/datasets/yashikota/birds-525-species-image-classif
 
 ```
 cd {你存放代码的文件夹}
-npm install --save-dev electron-builder
 # 以下操作需要管理员权限
 npm run dist
 ```
