@@ -36,7 +36,8 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "warningsAsErrors": false,
-      "artifactName": "birdwatching_handbook_Setup.exe"
+      "artifactName": "birdwatching_handbook_Setup.exe",
+      "installerHeaderIcon": "favicon.ico"
     },
     "buildDependenciesFromSource": false,
     "forceCodeSigning": false,

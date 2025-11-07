@@ -1,9 +1,5 @@
 你记不记得是谁一把屎一把尿把你从一个3年前的ipynb带大，是谁半夜下雨天抱着无响应的exe冲进DevTools，是谁斥巨内存打包整个PyTorch和resnet50环境就为了让你在主进程spawn之后收到秒速响应的stdin/stdout分类结果！！
 
-### 安装程序
-
-双击运行birdwatching_handbook_Setup.exe。安装过程中进度条抽风是正常现象，请不用担心。
-
 ### 训练鸟类分类模型
 
 load_dataset.py下载dataset，get_dataset.py解包dataset，resnet_train.py训练模型，model_eval.py评估模型。
@@ -64,3 +60,9 @@ cd {你存放代码的文件夹}
 # 以下操作需要管理员权限
 npm run dist
 ```
+
+* 可选：合并setup
+
+正如https://blog.csdn.net/qq_30795779/article/details/127428030  所说，“如果打包的包过大，这种打包方式除了一个exe外，还有个额外的.nsisbi文件”，而这个.nsisbi文件也是setup.exe所需要的。
+
+因此打开https://www.enigmaprotector.com/en/downloads.html  ，下载Enigma Virtual Box。在Input File填入setup.exe，左下角Files添加.nsisbi，右下角Files Options勾选Compression，点击Process。
