@@ -62,3 +62,23 @@ npm run dist
 ```
 
 感谢：https://blog.csdn.net/qq_30795779/article/details/127428030
+
+然GitHub Release 的单个文件上限是 2 GB，为了塞进release
+
+```
+cd {你存放代码的文件夹\build_output}
+# 需要把7z添加进环境变量
+7z a birdwatching_setup.7z birdwatching_handbook_Setup.exe birdwatching_handbook_Setup.nsisbin -v1900m
+```
+
+然后依次上传分卷即可。
+
+安装说明：
+1. 下载所有分卷（.001, .002, .003, .004）
+2. 确保它们放在同一个文件夹中
+3. 使用 7-Zip 打开 birdwatching_setup.7z.001 并解压
+4. 解压后会得到：
+   - birdwatching_handbook_Setup.exe
+   - birdwatching_handbook_Setup.nsisbin
+5. 双击 birdwatching_handbook_Setup.exe 开始安装
+   安装过程中，进度条抽风是正常现象，请不用担心。
